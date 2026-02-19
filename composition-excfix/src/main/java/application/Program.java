@@ -49,6 +49,9 @@ public class Program {
             worker.addContract(contract);
         }
 
+        System.out.println();
+        System.out.print("Enter month and year to calculate income (MM/YYYY): ");
+        String monthAndYear = sc.next();
 
         sc.close();
     }
