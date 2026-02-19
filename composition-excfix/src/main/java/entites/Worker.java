@@ -2,7 +2,6 @@ package entites;
 
 import entites_enum.WorkLevel;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -16,7 +15,7 @@ public class Worker {
     private Departament departament;
     private List<HourContract> contracts = new ArrayList<>();
 
-    public Worker(){
+    public Worker(String workerName, WorkLevel workLevel, double baseSalary, Departament departament){
     }
 
     public Worker(Departament departament, Double basesalary, WorkLevel level, String name) {
