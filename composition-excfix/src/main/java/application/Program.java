@@ -1,5 +1,8 @@
 package application;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Program {
     void main(){
 
@@ -8,5 +11,9 @@ public class Program {
          Depois, solicitar do usuário um mês e mostrar qual foi o salário do funcionário
          nesse mês*/
 
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        sc.close();
     }
 }
