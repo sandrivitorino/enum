@@ -1,7 +1,6 @@
 package entites;
 
 import entites_enum.WorkLevel;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -15,14 +14,17 @@ public class Worker {
     private Departament departament;
     private List<HourContract> contracts = new ArrayList<>();
 
-    public Worker(String workerName, WorkLevel workLevel, double baseSalary, Departament departament){
+    public Worker(){
+
     }
 
-    public Worker(Departament departament, Double basesalary, WorkLevel level, String name) {
+    public Worker(Departament departament, String name, Double baseSalary, WorkLevel level) {
         this.departament = departament;
-        this.baseSalary = basesalary;
-        this.level = level;
         this.name = name;
+        this.level = level;
+        this.baseSalary = baseSalary;
+        
+        
     }
 
     public String getName() {
@@ -45,8 +47,8 @@ public class Worker {
         return baseSalary;
     }
 
-    public void setBaseSalary(Double basesalary) {
-        this.baseSalary = basesalary;
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     public Departament getDepartament() {
