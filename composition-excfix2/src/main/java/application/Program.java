@@ -3,17 +3,24 @@ package application;
 import entites.Comment;
 import entites.Post;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
-    void main(){
+    void main() throws ParseException {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
         Comment c1 = new Comment("Have a nice trip!");
         Comment c2 = new Comment("Wow that's awesome!");
-        Post p1 = new Post(moment, title, content, likes);
+        Post p1 = new Post(sdf.parse("21/06/2026 13:05:44"),
+                "Traveling to New Zealand",
+                "I'm going to visit this wonderful country!",
+                12);
 
         sc.close();
     }
