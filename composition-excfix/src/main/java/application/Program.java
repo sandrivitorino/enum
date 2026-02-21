@@ -4,7 +4,6 @@ import entites.Departament;
 import entites.HourContract;
 import entites.Worker;
 import entites_enum.WorkLevel;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
