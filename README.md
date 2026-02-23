@@ -20,7 +20,7 @@ The focus was on improving code organization, readability, and responsibility di
 - Each class should be responsible for its own data and behavior.
 
 ## Practice Exercises
-- Worker with multiple contracts and monthly income calculation
+- Worker with multiple contracts and monthly income calculation (composition-excfix)
 - Social media post with comments using composition and `StringBuilder`
 - Order system with client, items, products and order status using enums and composition
 
