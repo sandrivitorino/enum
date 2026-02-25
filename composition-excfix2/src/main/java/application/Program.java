@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class Program {
     void main() throws ParseException {
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
