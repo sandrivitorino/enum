@@ -18,7 +18,7 @@ public class Program {
 
         OrderItem oi1 = new OrderItem(1, 1000.00, p);
 
-        System.out.println(oi1.getProduct().getName());
+        System.out.println(oi1);
 
 
 
